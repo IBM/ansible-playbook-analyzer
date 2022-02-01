@@ -1,0 +1,21 @@
+---
+collections:
+# - source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/community-ciscosmb-1.0.4.tar.gz
+#   type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/ansible-netcommon-2.5.0.tar.gz
+  type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/ansible-utils-2.4.3.tar.gz
+  type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/vmware-vmware_rest-2.1.4.tar.gz
+  type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/cloud-common-2.1.0.tar.gz
+  type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/debops-debops-2.3.3.tar.gz
+  type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/debops-roles01-2.3.3.tar.gz
+  type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/debops-roles02-2.3.3.tar.gz
+  type: file
+- source: /Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/test-dir/debops-tmp/debops-roles03-2.3.3.tar.gz
+  type: file
+- community.ciscosmb

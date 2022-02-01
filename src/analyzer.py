@@ -11,7 +11,7 @@ from ansible.cli.galaxy import validate_collection_path, find_existing_collectio
 from ansible.galaxy.collection.concrete_artifact_manager import (
     ConcreteArtifactsManager,
 )
-from ansible.module_utils._text import to_text
+from ansible.module_utils._text import to_text, to_bytes
 from ansible.galaxy.collection import _resolve_depenency_map
 from ansible import context
 
@@ -79,9 +79,9 @@ class CollectionDependencyAnalyzer:
                 "local_path": local_path,
                 "repository": repository,
                 "dependencies": dependencies,
-                "url": dinfo["url"],
                 "sha256_hash": dinfo["sha256_hash"],
-                "type": dinfo["type"]
+                "type": dinfo["type"],
+                "src": dinfo["src"]
             },
             "state":{
                 "download_count": download_count,
@@ -193,8 +193,11 @@ class CollectionDependencyAnalyzer:
         for _, concrete_coll_pin in dep_map.copy().items():
             msg = '{} : type:{}'.format(to_text(concrete_coll_pin), concrete_coll_pin.type)
             logger.debug(msg)
-            url, sha256_hash, _ = self.camanager._galaxy_collection_cache[concrete_coll_pin]
-            ccp = {"name":to_text(concrete_coll_pin), "src": concrete_coll_pin.src, "ver": concrete_coll_pin.ver, "type":concrete_coll_pin.type , "url": url, "sha256_hash": sha256_hash}
+            if concrete_coll_pin.is_file:
+                ccp = {"name":to_text(concrete_coll_pin), "src": concrete_coll_pin.src, "ver": concrete_coll_pin.ver, "type":concrete_coll_pin.type , "sha256_hash": ""}
+            elif concrete_coll_pin.type == "galaxy":
+                url, sha256_hash, _ = self.camanager._galaxy_collection_cache[concrete_coll_pin]
+                ccp = {"name":to_text(concrete_coll_pin), "src": url, "ver": concrete_coll_pin.ver, "type":concrete_coll_pin.type ,"sha256_hash": sha256_hash}
             logger.debug(ccp)
             collection_urls.append(ccp)
         return collection_urls
