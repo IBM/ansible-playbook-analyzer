@@ -1,0 +1,11 @@
+# validation policy
+allow_condition:
+- community_score: 3
+- download_count: 150000
+allow_list:
+- namespace: vmware
+  name: vmware_rest
+- namespace: debops
+#   name: roles*
+# - namespace: debops
+#   name: debops

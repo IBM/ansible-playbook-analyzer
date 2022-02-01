@@ -1,0 +1,186 @@
+{
+    "collections": [
+        {
+            "name": "netcommon",
+            "namespace": "ansible",
+            "collection_info": {
+                "version": "2.5.0",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/ansible/netcommon",
+                "repository": "https://github.com/ansible-collections/ansible.netcommon",
+                "dependencies": {
+                    "ansible.utils": ">=2.0.0"
+                },
+                "url": "https://galaxy.ansible.com/download/ansible-netcommon-2.5.0.tar.gz",
+                "sha256_hash": "5538ad86d52196c51885023218ddd4d0e983aea282074e62bac56b646d4e6051",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 5987451,
+                "community_score": 0.0,
+                "community_survey_count": 1
+            },
+            "valid": true
+        },
+        {
+            "name": "utils",
+            "namespace": "ansible",
+            "collection_info": {
+                "version": "2.4.3",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/ansible/utils",
+                "repository": "https://github.com/ansible-collections/ansible.utils",
+                "dependencies": {},
+                "url": "https://galaxy.ansible.com/download/ansible-utils-2.4.3.tar.gz",
+                "sha256_hash": "bb0f317191ef538036bf6a62d64f28b5b9c7b7118eb90b0164688bc37a282455",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 3345693,
+                "community_score": null,
+                "community_survey_count": 0
+            },
+            "valid": true
+        },
+        {
+            "name": "roles03",
+            "namespace": "debops",
+            "collection_info": {
+                "version": "2.3.3",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/debops/roles03",
+                "repository": "https://github.com/debops/debops",
+                "dependencies": {},
+                "url": "https://galaxy.ansible.com/download/debops-roles03-2.3.3.tar.gz",
+                "sha256_hash": "15836f13d6122f8873a7af9bf93cec0523f3bd1a9839bfc3c546b846196ae13e",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 41551,
+                "community_score": null,
+                "community_survey_count": 0
+            },
+            "valid": true
+        },
+        {
+            "name": "roles02",
+            "namespace": "debops",
+            "collection_info": {
+                "version": "2.3.3",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/debops/roles02",
+                "repository": "https://github.com/debops/debops",
+                "dependencies": {},
+                "url": "https://galaxy.ansible.com/download/debops-roles02-2.3.3.tar.gz",
+                "sha256_hash": "e082993e109e3932be1e8e6fef24f098196d075ff66984eff710c82a537472b1",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 41358,
+                "community_score": null,
+                "community_survey_count": 0
+            },
+            "valid": true
+        },
+        {
+            "name": "debops",
+            "namespace": "debops",
+            "collection_info": {
+                "version": "2.3.3",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/debops/debops",
+                "repository": "https://github.com/debops/debops",
+                "dependencies": {
+                    "debops.roles01": "2.3.3",
+                    "debops.roles02": "2.3.3",
+                    "debops.roles03": "2.3.3"
+                },
+                "url": "https://galaxy.ansible.com/download/debops-debops-2.3.3.tar.gz",
+                "sha256_hash": "d9cba8c180240674a3978f7424794b3e568c6200673337d937528c4b6ae809e7",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 49879,
+                "community_score": null,
+                "community_survey_count": 0
+            },
+            "valid": true
+        },
+        {
+            "name": "roles01",
+            "namespace": "debops",
+            "collection_info": {
+                "version": "2.3.3",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/debops/roles01",
+                "repository": "https://github.com/debops/debops",
+                "dependencies": {},
+                "url": "https://galaxy.ansible.com/download/debops-roles01-2.3.3.tar.gz",
+                "sha256_hash": "5faad42a01cef4be3fbabfc3c74458089d83c6d03a8824d11927a350ff0cfed5",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 41334,
+                "community_score": null,
+                "community_survey_count": 0
+            },
+            "valid": true
+        },
+        {
+            "name": "common",
+            "namespace": "cloud",
+            "collection_info": {
+                "version": "2.1.0",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/cloud/common",
+                "repository": "https://github.com/ansible-collections/cloud.common",
+                "dependencies": {},
+                "url": "https://galaxy.ansible.com/download/cloud-common-2.1.0.tar.gz",
+                "sha256_hash": "ba243d34acb32270fb5ff9090199ee4c9efacf908dbf57f4b43e22af605822f7",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 153891,
+                "community_score": null,
+                "community_survey_count": 0
+            },
+            "valid": true
+        },
+        {
+            "name": "ciscosmb",
+            "namespace": "community",
+            "collection_info": {
+                "version": "1.0.4",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/community/ciscosmb",
+                "repository": "https://github.com/ansible-collections/community.ciscosmb",
+                "dependencies": {
+                    "ansible.netcommon": ">=1.5.0"
+                },
+                "url": "https://galaxy.ansible.com/download/community-ciscosmb-1.0.4.tar.gz",
+                "sha256_hash": "c6533a75819a7e8724b39bc08af8d6b83134e674b8a24cf6b59cbdd575e1d349",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 325,
+                "community_score": 3.25,
+                "community_survey_count": 2
+            },
+            "valid": true
+        },
+        {
+            "name": "vmware_rest",
+            "namespace": "vmware",
+            "collection_info": {
+                "version": "2.1.4",
+                "local_path": "/Users/rkudo/go/src/github.com/rurikudo/ansible-collection-analyzer/tmp/ansible_collections/vmware/vmware_rest",
+                "repository": "https://github.com/ansible-collections/vmware.vmware_rest.git",
+                "dependencies": {
+                    "cloud.common": ">=2.0.0,<3.0.0"
+                },
+                "url": "https://galaxy.ansible.com/download/vmware-vmware_rest-2.1.4.tar.gz",
+                "sha256_hash": "02f8d3192f814adf39889410d68c7bc9d3ab99ac85e6b6616f3c0757f1a9e3fe",
+                "type": "galaxy"
+            },
+            "state": {
+                "download_count": 58514,
+                "community_score": null,
+                "community_survey_count": 0
+            },
+            "valid": true
+        }
+    ],
+    "roles": []
+}

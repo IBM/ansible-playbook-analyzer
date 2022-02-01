@@ -1,0 +1,46 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "simple": {
+            "format": "%(lineno)s: [%(levelname)s]: %(message)s"
+        }
+    },
+
+    "handlers": {
+        "consoleHandler": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "simple",
+            "stream": "ext://sys.stdout"
+        },
+        "fileHandler": {
+            "class": "logging.FileHandler",
+            "level": "DEBUG",
+            "formatter": "simple",
+            "filename": "to be replaced"
+        }
+    },
+
+    "loggers": {
+        "__main__": {
+            "level": "DEBUG",
+            "handlers": ["consoleHandler", "fileHandler"],
+            "propagate": false
+        },
+        "same_hierarchy": {
+            "level": "DEBUG",
+            "handlers": ["consoleHandler", "fileHandler"],
+            "propagate": false
+        },
+        "lower.sub": {
+            "level": "DEBUG",
+            "handlers": ["consoleHandler", "fileHandler"],
+            "propagate": false
+        }
+    },
+
+    "root": {
+        "level": "DEBUG"
+    }
+}

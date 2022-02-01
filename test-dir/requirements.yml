@@ -1,0 +1,8 @@
+---
+collections:
+ - debops.debops
+ - vmware.vmware_rest
+ - community.ciscosmb
+#  - name: https://github.com/ansible-collections/ansible.posix
+#    version: 1.3.0
+#    type: git
