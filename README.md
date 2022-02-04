@@ -1,4 +1,4 @@
-# ansible-collection-analyzer
+# ansible-playbook-analyzer
 
 command example
 ```
